@@ -14,10 +14,14 @@
         email
         required
         name="email"
-        #emailInput = "ngModel"
+        #emailInput="ngModel"
       />
-      <mat-error *ngIf="emailInput.hasError('required')">Fild most not be empty</mat-error>
-      <mat-error *ngIf="!emailInput.hasError('required')">Email is invalid</mat-error>
+      <mat-error *ngIf="emailInput.hasError('required')"
+        >Fild most not be empty</mat-error
+      >
+      <mat-error *ngIf="!emailInput.hasError('required')"
+        >Email is invalid</mat-error
+      >
     </mat-form-field>
 
     <mat-form-field>
@@ -32,6 +36,15 @@
       />
       <mat-hint>should be at 8 character long</mat-hint>
       <mat-error>Has to be as least 6 characters long.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker">
+
+      <mat-datepicker-toggle [for]="picker"></mat-datepicker-toggle>
+
+
+      <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
     <button type="submit" mat-raised-button color="primary">Submit</button>
