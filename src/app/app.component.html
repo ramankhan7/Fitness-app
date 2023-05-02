@@ -5,18 +5,27 @@
 
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <div>Logo</div>
-
       <div>
-        <a routerLink="signup">Signup </a>
-        <a routerLink="login"> Login</a>
-        <a routerLink="logout">Logout </a>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
       </div>
 
-      <div>
-        <button (click)="sidenav.toggle()">Toggle sidenav</button>
+      <div>لوگو</div>
+
+      <div fxFlex fxLayout fxLayoutAlign="flex-end">
+        <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+          <li>
+            <a routerLink="signup">ثبت نام </a>
+          </li>
+          <li>
+            <a routerLink="login"> ورود</a>
+          </li>
+          <li>
+            <a routerLink="training"> تمرین</a>
+          </li>
+        </ul>
       </div>
-      
     </mat-toolbar>
 
     <main>
