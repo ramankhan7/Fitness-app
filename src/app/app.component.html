@@ -5,13 +5,13 @@
 
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <div>
+      <div fxHide.gt-xs>
         <button mat-icon-button (click)="sidenav.toggle()">
           <mat-icon>menu</mat-icon>
         </button>
       </div>
 
-      <div fxFlex fxLayout fxLayoutAlign="flex-end">
+      <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
         <ul fxLayout fxLayoutGap="10px" class="navigation-items">
           <li>
             <a mat-icon-button routerLink="signup">
