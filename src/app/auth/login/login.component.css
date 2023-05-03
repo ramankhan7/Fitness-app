@@ -1,0 +1,10 @@
+mat-form-field {
+  width: 500px;
+}
+
+mat-checkbox {
+  padding: 10px 10px;
+  background-color: #575757;
+
+  margin-bottom: 15px;
+}
