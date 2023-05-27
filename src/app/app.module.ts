@@ -28,6 +28,7 @@ import {
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { StopTrainingComponent } from './current-training/stop-training/stop-training-component';
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { StopTrainingComponent } from './current-training/stop-training/stop-tra
       provide: MAT_DATE_FORMATS,
       useValue: PERSIAN_DATE_FORMATS,
     },
+    AuthService,
   ],
   bootstrap: [AppComponent],
 })

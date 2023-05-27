@@ -4,7 +4,8 @@
     fxLayoutAlign="center center"
     fxLayoutGap="10px"
     #f="ngForm"
-  > 
+    (ngSubmit)="onSubmit(f)"
+  >
     <mat-form-field>
       <input
         matInput
