@@ -24,7 +24,7 @@
       </li>
 
       <li *ngIf="isAuth">
-        <a mat-icon-button><mat-icon>logout</mat-icon></a>
+        <a mat-icon-button (click)="onLogout()"><mat-icon>logout</mat-icon></a>
       </li>
     </ul>
   </div>
